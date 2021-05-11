@@ -16,4 +16,5 @@ createApp({
     }),
 })
   .use(plugin)
+  .mixin({ methods: { route: window.route } })
   .mount(el);
